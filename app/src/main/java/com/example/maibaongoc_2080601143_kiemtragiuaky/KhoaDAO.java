@@ -53,10 +53,10 @@ public class KhoaDAO {
         }
     }
 
-    public void Delete(int khoaId) {
+    public void Delete(String khoaTen) {
         SQLiteDatabase db = khoaHelper.getWritableDatabase();
         //c1: sử dụng delete
-        db.delete("khoa", "id=?", new String[]{String.valueOf(khoaId)});
+        db.delete("Khoa", "khoa_name=?", new String[]{String.valueOf(khoaTen)});
     }
 
 }

@@ -9,8 +9,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="70sp"
-        android:background="#FFEB3B"
-        android:text="Sinh viên"
+        android:background="#4CAF50"
+        android:text="Nhân viên"
         android:textSize="25sp"
         android:gravity="center"
         android:textColor="@color/black"/>
@@ -20,39 +20,37 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Mã sinh viên"
+        android:hint="Mã nhân viên"
         app:errorEnabled="true">
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/txtInputMssv"/>
+            android:id="@+id/txtInputManv"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Tên sinh viên"
+        android:hint="Tên nhân viên"
         app:errorEnabled="true">
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/txtInputNameSinhVien"/>
+            android:id="@+id/txtInputNameNhanVien"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="DTB"
+        android:hint="Email"
         app:errorEnabled="true">
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/txtInputDTB"/>
+            android:id="@+id/txtInputEmail"/>
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!--    <Spinner-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"/>-->
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -63,6 +61,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/txtInputKhoa"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hình ảnh"
+        app:errorEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtInputHinhAnh"/>
     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -88,7 +97,8 @@
         <Button
             android:id="@+id/btnClear"
             android:layout_width="150sp"
-            android:layout_marginLeft="50sp"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="90sp"
             android:layout_height="wrap_content"
             android:textSize="30sp"
             android:textColor="@color/white"

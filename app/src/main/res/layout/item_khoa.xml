@@ -8,8 +8,8 @@
     <TextView
         android:id="@+id/tvkhoa"
         android:layout_width="390sp"
-        android:layout_height="41sp"
-        android:background="#4CAF50"
+        android:layout_height="60sp"
+        android:background="#FFC107"
         android:gravity="center"
         android:textSize="40sp"
         android:textColor="@color/black"

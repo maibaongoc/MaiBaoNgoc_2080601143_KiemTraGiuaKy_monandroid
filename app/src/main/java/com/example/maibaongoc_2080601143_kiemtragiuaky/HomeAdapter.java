@@ -13,9 +13,9 @@ import java.util.List;
 
 public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
     private List<Home> lstHome;
-    Khoa khoa;
 
-    public HomeAdapter(List<Khoa> lstKhoa)
+
+    public HomeAdapter(List<Home> lstHome)
     {
         this.lstHome=lstHome;
     }
@@ -39,24 +39,28 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
 
         holder.t1.setText(temp.getMaso());
         holder.t2.setText(temp.getTen());
-//        holder.t3.setF(temp.getDtb());
+        holder.t3.setText(temp.getEmail());
         holder.t4.setText(temp.getKhoa());
+        holder.t5.setText(temp.getHinhanh());
 
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return lstHome.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        TextView t1 , t2 , t3 , t4;
+        TextView t1 , t2 , t3 , t4,t5;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            t1 = itemView.findViewById(R.id.txvMssv);
-            t2 = itemView.findViewById(R.id.txvTenvien);
-            t3 = itemView.findViewById(R.id.txvDTB);
+            t1 = itemView.findViewById(R.id.txvMsnv);
+            t2 = itemView.findViewById(R.id.txvTennv);
+            t3 = itemView.findViewById(R.id.txvEmail);
             t4 = itemView.findViewById(R.id.txvKhoa);
+            t5 = itemView.findViewById(R.id.txvHinhAnh);
+
+
         }
     }
 }
